@@ -1,6 +1,6 @@
 ## HackGif
 
-Este projeto consiste em cadastrar e listar os The bests Gifs de hackes da internet, para isto foi utilizado as tecnologias Python, Django e Django rest.
+Este projeto consiste em cadastrar e listar os The bests Gifs de hackes da internet, para isto foi utilizado as tecnologias Python, Django e Django-Rest-Framework, como banco foi utilizado o sqlit3 por sua simplicidade e por ja vir integrado com o django.
 
 ### Instalação
 
