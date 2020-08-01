@@ -1,6 +1,6 @@
-## HackGif
+## HackGif Api
 
-Este projeto consiste em cadastrar e listar os The bests Gifs de hackes da internet, para isto foi utilizado as tecnologias Python, Django e Django-Rest-Framework, como banco foi utilizado o sqlit3 por sua simplicidade e por ja vir integrado com o django.
+Este projeto consiste em fornocer uma api para listagem dos melhores Gifs de hackes da internet, podendo realizar o CRUD dos gifs, para isto foi utilizado as tecnologias Python, Django e Django-Rest-Framework, como banco foi utilizado o sqlit3.
 
 ### Instalação
 
@@ -54,3 +54,21 @@ python manage.py createsuperuser
 ```sh
 python manage.py runserver
 ```
+
+### rotas em localhost
+
+DJANGO ADMIN
+
+CRUD `localhost:8000/admin`
+
+DJANGO REST-FRAMEWORK
+
+listagem `localhost:8000/api/gifs` verbo `GET`
+
+detalhar `localhost:8000/api/gifs/{idDoGif}` verbo `GET`
+
+criar `localhost:8000/api/gifs/` verbo `POST` params `{ gif_url: string, votes: int }`
+
+editar `localhost:8000/api/gifs/{idDoGif}` verbo `PUT` params `{ gif_url: string, votes: int }`
+
+deletar `localhost:8000/api/gifs/{idDoGif}` verbo `DELETE`
