@@ -55,20 +55,23 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-### rotas em localhost
+### base_url
 
-DJANGO ADMIN
+rodando localmente
+`base_url` => `localhost:8000`
 
-CRUD `localhost:8000/admin`
+### rotas django admin
 
-DJANGO REST-FRAMEWORK
+CRUD `{base_url}/admin`
 
-listagem `localhost:8000/api/gifs` verbo `GET`
+### rotas da api
 
-detalhar `localhost:8000/api/gifs/{idDoGif}` verbo `GET`
+listagem `{base_url}/api/hacker-gifs` verbo `GET`
 
-criar `localhost:8000/api/gifs/` verbo `POST` params `{ gif_url: string, votes: int }`
+detalhar `{base_url}/api/hacker-gifs/{idDoGif}` verbo `GET`
 
-editar `localhost:8000/api/gifs/{idDoGif}` verbo `PUT` params `{ gif_url: string, votes: int }`
+criar `{base_url}/api/hacker-gifs/` verbo `POST` params `{ gif_url: string, votes: int }`
 
-deletar `localhost:8000/api/gifs/{idDoGif}` verbo `DELETE`
+editar `{base_url}/api/hacker-gifs/{idDoGif}` verbo `PUT` params `{ gif_url: string, votes: int }`
+
+deletar `{base_url}/api/hacker-gifs/{idDoGif}` verbo `DELETE`
