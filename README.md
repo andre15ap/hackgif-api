@@ -20,10 +20,14 @@ source myvenv/Scripts/activate
 
 ### ativando ambiente virtual no linux
 
-no windows com git bash
-
 ```sh
 source myvenv/bin/activate
+```
+
+### atualizando pip
+
+```sh
+python -m pip install --upgrade pip
 ```
 
 ### instalando dependencias
@@ -31,6 +35,18 @@ source myvenv/bin/activate
 ```sh
 cd hackgifs-api
 pip install -r requeriments.txt
+```
+
+### fazendo migrations
+
+```sh
+python manage.py migrations
+```
+
+### criando superuser
+
+```sh
+python manage.py createsuperuser
 ```
 
 ### rodar em localhost
