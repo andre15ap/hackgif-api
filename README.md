@@ -18,6 +18,12 @@ python -m venv myvenv
 source myvenv/Scripts/activate
 ```
 
+### ativando ambiente virtual no Windows com CMD
+
+```sh
+myvenv\Scripts\activate
+```
+
 ### ativando ambiente virtual no linux
 
 ```sh
@@ -33,17 +39,17 @@ python -m pip install --upgrade pip
 ### instalando dependencias
 
 ```sh
-cd hackgifs-api
-pip install -r requeriments.txt
+cd hackgif-api
+pip install -r requirements.txt
 ```
 
 ### fazendo migrations
 
 ```sh
-python manage.py migrations
+python manage.py migrate
 ```
 
-### criando superuser
+### criando superuser (no windows abra o terminal como administrador)
 
 ```sh
 python manage.py createsuperuser
